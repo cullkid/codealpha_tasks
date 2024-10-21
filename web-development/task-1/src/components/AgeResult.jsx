@@ -3,9 +3,9 @@ import React from "react";
 const AgeResult = ({ myAge }) => {
   return (
     <div>
-      <div className="flex items-center justify-center gap-[5rem]">
+      <div className="flex items-center justify-center gap-[9rem]">
         <div className="flex item-center justify-center gap-2">
-          <span className="text-xl font-bold">Age:</span>
+          <span className="text-xl font-bold right-[50rem]">Year:</span>
           <span className="bg-white px-6 py-1">{myAge.years}</span>
         </div>
         <div className="flex item-center justify-center gap-2">
@@ -17,15 +17,11 @@ const AgeResult = ({ myAge }) => {
           <span className="bg-white px-6 py-1">{myAge.days}</span>
         </div>
       </div>
-      <h3 className="flex items-center justify-center py-[2rem]">
-        According your date of birth, you are&nbsp;
-        <span className="text-xl font-medium"> {myAge.years}&nbsp; </span>
-        years,&nbsp;
-        <span className="text-xl font-medium">{myAge.months}&nbsp;</span>
-        months,&nbsp;
-        <span className="text-xl font-medium"> {myAge.days}</span>&nbsp; days
-        old
-      </h3>
+      <div className="flex gap-[6rem] items-center justify-center py-4">
+        <p className="flex items-start">Calculate your age by year</p>
+        <p className="flex items-start">Calculate your age by months</p>
+        <p className="flex items-start">Calculate your age by days</p>
+      </div>
     </div>
   );
 };
